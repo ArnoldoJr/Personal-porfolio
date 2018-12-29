@@ -1,0 +1,234 @@
+<!--
+****************************************
+*  Copyright © 2018 Arnoldo Rodriguez  *
+****************************************
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arnoldo Rodriguez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="res\\favicon.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body onload="onLoad()">
+    <div id="wrapper">
+        <div id="header">
+            <div id="header-content">
+                <nav id="navigation_header">
+                    <a id="AR" onclick="load_content(this.id)">AR</a>
+                    <a class="hyperlink" id="projects" onclick="load_content(this.id)">Projects</a>
+                    <a class="hyperlink" id="resume" onclick="load_content(this.id)">Resume</a>
+                    <a class="hyperlink" id="work" onclick="load_content(this.id)">Work</a>
+                    <a class="hyperlink" id="about" onclick="load_content(this.id)">About</a>
+                </nav>
+            </div>
+        </div>
+        <div id="content">
+            <div id="sidebar" style="display: none">
+                <div id="side_nav" class="sidebar">
+                    <button id="android" class="elipse" onclick="sidemenu_click(this.id)" >Android</button>
+                    <button id="c++" class="elipse" onclick="sidemenu_click(this.id)">C++</button>
+                    <button id="c#" class="elipse" onclick="sidemenu_click(this.id)">C#</button>
+                    <button id="arduino" class="elipse" onclick="sidemenu_click(this.id)">Arduino</button>
+                </div> 
+            </div>
+
+            <!-- This part will be replaced with new content depending on the tab -->
+            <div class="main"> 
+                <!--****************************** AR *********************************-->
+                <div id="ar-tab">
+                    <div id="picture_container" style="width:100%; text-align:center; margin:0 auto;">
+                        <!-- right here on june 27th a fucking div tag instead of an img closing tag was pushing the footer down.-->
+                        <img id="profile-pic" class="picture" src="res\\profile_picture.png" alt="picture"></img>
+                    </div>
+                    <div id="text_container">
+                         <!-- Make sure this is the first <p> tag of the html file, otherwise the typing effect wont work.-->
+                        <p id="typed-text"></p>
+                        <p id="summary" style="display: none">I'm a <span class="red_text">Computer Engineering</span> student at the
+                           <span class="red_text"><a target="_blank" href="https://uwaterloo.ca/" style="color:#F4A0A0;">University of Waterloo.</a> </span>
+                        </br> In the above tabs<span><img id="handup" src="res\\hand.png"></img></span> 
+                         you may find information about some of the projects I've been working on as well as past work experiences.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- number symbol causes crash-->
+                <!--****************************** Projects *********************************-->
+                <div id="projects-tab" style="display: none">
+                     <!--************** Android ***************-->
+                    <div class="spacer"><p>&nbsp;</p></div>
+                    <div id="android_projects" class="languages" style="display: none">
+                        <img class="morse_image" src="res\\morse_code.png" alt="Morse Code app logo"> </img>
+                        <h2 class="main-headings">//  Morse Encoder &amp; Decoder </h2>
+                        <p class="programming_projects">The app transmits Morse code using the camera flash and the speaker (beeps).</p>
+                        <p class="programming_projects">It decodes Morse code using the back camera by simply pointing the camera to the light source as shown below:</p>
+                        <img class="screen_shots" src="res\\decode.png" alt="Morse Code app logo"> </img>
+                        <p class="programming_projects">Here is how it works:</p>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/m1srz7mJYII" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <p class="programming_projects">It allows translation from plain text into Morse code using dashes and dots. For an entered message, 
+                            the user can select whether to emit the morse signal in form of light or sound.</p>
+                        <img class="screen_shots" src="res\\translate.png" alt="Morse Code app logo"> </img>
+                        <p class="programming_projects">The app also includes a  Morse alphabet for reference as well as settings for the decoding section.</p>
+                        <p class="programming_projects"> I am currently working on an audio decoder section!</p>
+                        <a class="app_store_link" target="_blank" href="https://play.google.com/store/apps/details?id=ca.noldy.www.ledmorse">See app on Google Play</a>
+                    </div>
+                    <!--************** C++ **************-->
+                    <div id="c++-projects" class="languages" style="display: none">
+                        <h2 class="main-headings">//  Quadratic Hash Table (C++) </h2>
+                        <p class="programming_projects">This class implements an <a class="inline_link" href="https://en.wikipedia.org/wiki/Quadratic_probing" target="_blank">quadratic hash table</a> with all the necessary methods that allow to:</p>
+                        <p class="programming_projects" style="margin-left: 20px">
+                            * Insert a value into the hash table.</br>
+                            * Remove a value from the hash table.</br>
+                            * Remove all the values in the hash table.</br>
+                            * Get load factor, size, and capacity.</br>
+                            * Determine if an object is in the hash table.</br>
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/Algorithms-and-Data-Structures/blob/master/Quadratic_hash_table.h">See source code</a>
+                        <h2 class="main-headings" style="margin-bottom: calc(3.5px + 2.4vw);">//*******************************************************************</h2>
+
+
+                        <h2 class="main-headings">//  Dijkstra's Algorithm (C++) </h2>
+                        <p class="programming_projects">This class implements an <a class="inline_link" href="hhttps://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's algorithm</a> with all the necessary methods that allow to:</p>
+                        <p class="programming_projects" style="margin-left: 20px">
+                            * Insert an edge between two existing vertices.</br>
+                            * Find the shortest path between two given vertices a and b.</br>
+                            * Find the weight of the edge connecting vertices a and b.</br>
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/Algorithms-and-Data-Structures/blob/master/Weighted_graph.h">See source code</a>
+                        <h2 class="main-headings" style="margin-bottom: calc(3.5px + 2.4vw);">//*******************************************************************</h2>
+
+
+                        <h2 class="main-headings">//  AVL Tree (C++) </h2>
+                        <p class="programming_projects">This class implements an <a class="inline_link" href="https://en.wikipedia.org/wiki/AVL_tree" target="_blank">AVL tree</a> with all the necessary methods that allow to:</p>
+                        <p class="programming_projects" style="margin-left: 20px">
+                            * Insert a node in the tree.</br>
+                            * Delete the entire tree.</br>
+                            * Erase a specific node in the tree.</br>
+                            * Get the height of a node.</br>
+                            * Know whether a node is a leaf or not.</br>
+                            * Get the front and back values of the tree</br>
+                            * Find a specific value in the tree.</br>
+                            * Print the tree.</br>
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/Algorithms-and-Data-Structures/blob/master/AVL_tree.h">See source code</a>
+                        <h2 class="main-headings" style="margin-bottom: calc(3.5px + 2.4vw);">//*******************************************************************</h2>
+
+
+                        <h2 class="main-headings">//  Double Linked List (C++) </h2>
+                        <p class="programming_projects">This class implements an <a class="inline_link" href="https://en.wikipedia.org/wiki/Doubly_linked_list" target="_blank">doubly linked list</a> with all the necessary methods that allow to:</p>
+                        <p class="programming_projects" style="margin-left: 20px">
+                            * Push elements to the front and back.</br>
+                            * Pop elements from the front and back.</br>
+                            * Erase all instances of an element.</br>
+                            * Find the first instance of an element in the linked list.</br>
+                            * Copy a provided linked list.</br>
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/Algorithms-and-Data-Structures/blob/master/Double_linked_list.h">See source code</a>
+                    </div>
+                    <!--************** C# **************-->
+                    <div id="c#-projects" class="languages" style="display: none">
+                        <!-- 1st C# project -->
+                        <img src="res\\socket.png" class="tcpip" alt="TCP/IP Sockets"></img>
+                        <h2 class="main-headings">//  Network Sockets (C#) </h2>
+                        <p class="programming_projects">A socket is one endpoint of a two-way communication link between two programs running on the network.
+                            In this project I created a Synchronous Server Socket that handles every incoming connection from clients in different threads. </p>
+                        <p class="programming_projects">Among its main functionalities it includes:</p>
+                        <p class="programming_projects">
+                                * Communication in both directions.</br>
+                                * Send message to either a single socket or to all sockets.</br>
+                                * Handling Client Disconnections.</br>
+                                * Shutting down server socket.
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/Network_Sockets/blob/master/Server_Socket.cs">See source code</a>
+
+                        <h2 class="main-headings" style="margin-bottom: calc(3.5px + 2.4vw);">//*******************************************************************</h2>
+
+                        <!-- 2nd c# project -->
+                        <img src="res\\htmlStripper.png" class="htmlstring" alt="html to string" ></img>
+                        <h2 class="main-headings">//  HTML Stripper (C#) </h2>
+                        <p class="programming_projects">This method converts a string with all html tags (html file converted to string) into a string without the tags 
+                            preserving the original content and spacing.</p>
+                        <p class="programming_projects">Some of the basic tasks it performs are:</p>
+                        <p class="programming_projects">
+                                * Replace ampersand characters by its respectives meanings.</br>
+                                * Get rid of extra spacing (i.e. more than 2 empty lines in a row).</br>
+                                * Replace tags by appropiate line breaks.
+                        </p>
+                        <a class="source_code_link" target="_blank" href="https://github.com/ArnoldoJr/HTML_Stripper/blob/master/HTML_Stripper.cs">See source code</a>
+                    </div>
+                    <!--************** Arduino **************-->
+                    <div id="arduino-projects" class="languages" style="display: none">
+                        <p class="programming_projects">Work in progress, updating soon...</p>
+                    </div>
+                </div>
+
+                <!--****************************** Resume *********************************-->
+
+                <div id="resume-tab" style="display: none">
+                    <embed id="resume-container" src="res\\Arnoldo_Rodriguez.pdf" type='application/pdf'>
+                </div>
+
+                 <!--****************************** Work *********************************-->
+
+                <div id="work-tab">
+                    <a href="https://www.laborie.com" target="_blank"><img id="laborie-image" src="res\\laborie-logo.png" ></img></a></br>
+                    <a class="company-links" target="_blank" href="https://www.laborie.com"><h3>Laborie Medical Technologies</h3></a> 
+                    <p class="work-description">Position: Test Automation Developer (Co-op)</p>
+                    <p class="work-description" style="margin-bottom: calc(30px + 5vw);">Developed internal tools and automated processes to assist in the testing of medical devices software.</p>
+
+                    <a href="https://www.tigercat.com" target="_blank"><img id="tigercat-image" src="res\\tigercat-logo.png" ></img></a> </br>
+                    <a class="company-links" target="_blank" href="https://www.tigercat.com"><h3>Tigercat Industries</h3></a>
+                    <p class="work-description">Position: System Software Developer (Co-op)</p>
+                    <p class="work-description" style="margin-bottom: calc(30px + 5vw);">Designed and built new features (full stack) for applications used
+                        internally by several departments and customers (C#, MySQL), with
+                        positive customer feedback.</p>
+
+                    <a href="https://www.cbnco.com" target="_blank"><img id="cbn-image" src="res\\cbn-logo.png"></img></a> </br>
+                    <a class="company-links" target="_blank" href="https://www.cbnco.com"><h3>Canadian Bank Note Ltd.</h3></a>
+                    <p class="work-description">Position: Device Research (Co-op)</p>
+                    <p class="work-description" style="margin-bottom: calc(30px + 5vw);">Researched and tested different camera systems for application and cost
+                        reduction purposes (R&amp;D department). Collaborated in the integration of those systems in linux environments.</p>
+
+                    <a href="http://javaelectric.ca" target="_blank"><img id="java-image" src="res\\javaElectric-logo.png"></img></a></br>
+                    <a class="company-links" target="_blank" href="http://javaelectric.ca"><h3>Java Electric Ltd.</h3></a>
+                    <p class="work-description">Position: Junior Electrician (Volunteer)</p>
+                    <p class="work-description" style="margin-bottom: calc(30px + 5vw);">Worked in numerous electrical jobs in residential and business areas. Enhanced problem solving skills throughout the numerous and different
+                        tasks that I was required to execute.</p>
+                </div>
+
+                 <!--****************************** About *********************************-->
+
+                <div id="about-tab">
+                    <h2 class="company-links"> <span><a href="https://uwaterloo.ca/" target="_blank"><img id="loo-image"  src="res\\uwaterloo_logo.png"></img></a></span>  Education:</h2>
+                    <p class="work-description" style="margin-bottom: calc(10px + 5vw);">Candidate for Bachelor of Applied Sciences in Computer Engineering (with Artificial Inteligence option) </br> University of Waterloo. Class of 2021.</p>
+                    <h2 class="company-links"> <span><img id="ball-image" src="res\\basketball.png"></img></span> Hobbies:</h2>
+                    <p class="work-description" style="margin-bottom: calc(10px + 5vw);"> When I'm not coding Im doing sports :). My favourite ones are basketball, swimming, volleyball, and table tennis. Yeah the list
+                        is long, but, to be fair I can't say I have disliked any sport ever. <span><a style="color: #daede7" href="https://www.piellematera.it/ita/web/item.asp?nav=2080" target="_blank">Here</a></span> is a picture of me (I'm the number 5) 
+                        when I was 10, playing in the 13th edittion of Mini Basket in Piazza international Tournament in Italy.</p>
+                </div>
+
+            </div> 
+        </div>
+        <div class="push"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+            <nav>
+                <a class="social_media" href="https://www.linkedin.com/in/arnoldo-rodriguez" target="_blank"><img class="link_footer" src="res\\linkedin_icon.png" title="I'm on Linkedin"></img></a>
+                <a class="social_media" href="https://github.com//ArnoldoJr/" target="_blank"><img class="link_footer" src="res\\github_icon.png" title="take a look at my Github account"></img></a>
+                <a class="social_media" href="https://play.google.com/store/apps/developer?id=%D0%98oldy+Labs" target="_blank"><img class="link_footer" src="res\\googleplay_icon.png" title="Иoldy Labs"></img></a>
+                <a class="social_media" href="mailto:arnoldo2jr@gmail.com?subject=Email from website"><img class="link_footer" src="res\\mail_icon.png" title="Email me"></img></a>
+            </nav>
+            <p class="footer-text">Copyright © 2018. All rights reserved</p>
+            <p class="footer-text"> Hand coded by Arnoldo Rodriguez</p>
+        </div>
+    </div>
+</body>
+</html>
