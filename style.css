@@ -295,8 +295,7 @@ img.link_footer:hover {
 
 .morse_image {
     width: calc(100px + 30vw);
-    max-width: 550px;
-    margin-top: 10px;
+    max-width: 200px;
 }
 
 .screen_shots {
@@ -306,8 +305,8 @@ img.link_footer:hover {
 }
 
 .youtube {
-    width: calc(45px + 30vw);
-    height:calc(27px + 18vw);
+    width: calc(55px + 35vw);
+    height:calc(33px + 21vw);
     max-width:700px;
     max-height:420px;
     margin-top: 10px;
@@ -417,7 +416,7 @@ img.link_footer:hover {
     color: #000000;
     display:inline-block;
     text-decoration:none;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: calc(30px + 6.5vw);
     border-radius:25px;
     cursor: pointer;
