@@ -472,19 +472,16 @@ img.link_footer:hover {
 
 .company-name {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: calc(7px + 0.8vw);
+    font-size: calc(5px + 0.8vw);
     text-decoration:none;
-    font-style: normal;
     color: #cccccc;
 }
 
 .job-title{
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-size: calc(10px + 0.8vw);
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: calc(11px + 0.9vw);
     text-decoration:none;
-    font-weight: bold;
-    font-style: italic;
-    color: #daede7;
+    color: #FFFFFF;
 }
 
 .push {
