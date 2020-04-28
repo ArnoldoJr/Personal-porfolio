@@ -299,8 +299,8 @@ img.link_footer:hover {
 }
 
 .screen_shots {
-    width: calc(25px + 25vw);
-    max-width:250px;
+    width: calc(30px + 30vw);
+    max-width:350px;
     margin-top: 10px;
 }
 
