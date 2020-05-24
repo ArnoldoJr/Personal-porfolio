@@ -286,11 +286,11 @@ img.link_footer:hover {
 /*image classes*/
 .picture {
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: auto ;
     margin-right:  auto;
     animation: pic-rotate 3s both;
-    width: 20%;
+    width: 14%;
 }
 
 .morse_image {
