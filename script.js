@@ -80,9 +80,6 @@ function sidemenu_click(id){
         case "c++":
             document.getElementById("c++-projects").style.display = "inline-block";
             break;
-        case "c#":
-            document.getElementById("c#-projects").style.display = "inline-block";
-            break;
         case "arduino":
             document.getElementById("arduino-projects").style.display = "inline-block";
             break;
@@ -103,7 +100,6 @@ function sidemenu_click(id){
 function disappear_main_content(){
     document.getElementById("android_projects").style.display = "none";
     document.getElementById("c++-projects").style.display = "none";
-    document.getElementById("c#-projects").style.display = "none";
     document.getElementById("arduino-projects").style.display = "none";
 }
 
